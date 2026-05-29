@@ -10,7 +10,7 @@ venv/
 /blueprint/web/
 /blueprint/src/web.paux
 /blueprint/src/web.bbl
-/blueprint/print/
+# /blueprint/print/
 ## TeX
 *.aux
 *.lof

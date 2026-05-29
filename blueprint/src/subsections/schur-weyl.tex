@@ -7,3 +7,28 @@
 \begin{theorem}\uses{TestLemma}\label{TestTheorem}
   Test theorem
 \end{theorem}
+
+% Yan: everything we define as \begin{defintion, proposition, theorem, lemma} will show up in the
+% dependency graph, so we can use the \uses{} command to specify the dependencies between them.
+Suppose $\mathcal{X} = \mathbb{C}^{[d]}$ and $\mathcal{Y} = \mathbb{C}^{[d]}$ where $d \in \mathbb{N}$.
+Let the set of linear operators be $\mathcal{L}(\mathcal{X}, \mathcal{Y})$.
+
+\begin{definition}[symmetric subspace of linear operators]\label{def:sym_Lk}
+  The {symmetric subspace of linear operators} $\mathcal{L}(\mathcal{X})^{\varovee k}$ is the set of all operators $X \in \mathcal{L}(\mathcal{X}^{\otimes k})$ that remain unchanged (invariant) under the permutation $W_{\pi}$.
+That is,
+\begin{equation}
+    \mathcal{L}(\mathcal{X})^{\varovee k} = \{X \in \mathcal{L}(\mathcal{X}^{\otimes k}) : X = W_{\pi} X W_{\pi}^{*} \text{ for all } \pi \in S_{k} \}.
+    \label{eq:sym_Lk}
+\end{equation}
+
+\end{definition}
+
+% Yan: If we want to add certain definitions that probably already exists in mathlib,
+% we can add them here as a remark, and we can reference them for the reader's convenience.
+\begin{remark}
+Let $S_k$ denote the symmetric group. Then given $\pi \in S_k$, the permutation matrix (operator) $V_d(\pi)$ is the unitary matrix that satisfies
+\begin{equation}\label{eq:permutation}
+    W_{\pi} |\psi_1 \rangle \otimes \dots |\psi_k = |\psi_{\pi^{-1}(1)}\rangle \otimes \dots \otimes |\psi_{\pi^{-1}(k)}\rangle
+\end{equation}
+for all $|\psi_1 \rangle, \dots, |\psi_k\rangle \in \mathbb{C}^{d}$.
+\end{remark}

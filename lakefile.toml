@@ -1,5 +1,5 @@
-name = "lean-haar"
-defaultTargets = ["lean-haar"]
+name = "LeanHaar"
+defaultTargets = ["LeanHaar"]
 
 [leanOptions]
 pp.unicode.fun = true
@@ -11,4 +11,4 @@ name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"
 
 [[lean_lib]]
-name = "lean-haar"
+name = "LeanHaar"

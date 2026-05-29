@@ -46,7 +46,7 @@ jobs:
         with:
           build: true
           lint: false
-          mk_all-check: false. # Skip mk_all_check to save time, as it can be very slow for large projects
+          mk_all-check: false # Skip mk_all_check to save time, as it can be very slow for large projects
 
       - name: Compile blueprint and documentation
         uses: leanprover-community/docgen-action@deed0cdc44dd8e5de07a300773eb751d33e32fc8 # 2025-10-26

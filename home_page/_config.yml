@@ -21,7 +21,7 @@
 title: Formalization of Weingarten Calculus
 #email: your-email@example.com
 description: by Melody Lee and Yanting Teng
-baseurl: "formal-weingarten-calculus" # the subpath of your site, e.g. /blog
+baseurl: "/lean-haar" # the subpath of your site, e.g. /blog
 url: "https://teng10.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: teng10
